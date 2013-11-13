@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <cn.link.lis.FlowLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:id="@+id/layout_contain"
+            android:layout_toLeftOf="@+id/layout_state_bar"
+            ></cn.link.lis.FlowLayout>
+    <LinearLayout
+            android:id="@+id/layout_state_bar"
+            android:layout_height="match_parent"
+            android:layout_width="120dip"
+            android:background="#ccc"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            >
+        <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="提示最长长度"
+                android:padding="6dip"
+                android:gravity="center"
+                ></TextView>
+        <TextView
+                android:id="@+id/tv_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textColor="#000"
+                android:textSize="50sp"
+                android:gravity="center"
+                ></TextView>
+        <TextView
+                android:id="@+id/tv_difficulty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:padding="6dip"
+                android:gravity="center"
+                android:text="难度:小朋友"
+                ></TextView>
+        <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="下个等级:1/2"
+                android:gravity="center"
+                ></TextView>
+        <Button
+                android:id="@+id/btn_refresh"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Refresh"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                ></Button>
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                ></View>
+        <Button
+                android:id="@+id/btn_next"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Next"
+                ></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

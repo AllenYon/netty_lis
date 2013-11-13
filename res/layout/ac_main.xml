@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <cn.link.lis.FlowLayout
+                android:id="@+id/layout_pre_contain"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:background="#9f9"
+                ></cn.link.lis.FlowLayout>
+
+        <cn.link.lis.FlowLayout
+                android:id="@+id/layout_contain"
+                android:layout_height="0dip"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:background="#fff"
+                ></cn.link.lis.FlowLayout>
+
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/layout_state_bar"
+            android:layout_height="match_parent"
+            android:layout_width="120dip"
+            android:background="#ccc"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            >
+        <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text=""
+                android:padding="6dip"
+                android:gravity="center"
+                ></TextView>
+        <!--<TextView-->
+        <!--android:id="@+id/tv_max"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="4"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="50sp"-->
+        <!--android:gravity="center"-->
+        <!--></TextView>-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_difficulty"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#000"-->
+        <!--android:padding="6dip"-->
+        <!--android:gravity="center"-->
+        <!--android:text="难度:小朋友"-->
+        <!--></TextView>-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_level"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="下个等级:1/2"-->
+        <!--android:gravity="center"-->
+        <!--></TextView>-->
+
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                ></View>
+        <Button
+                android:id="@+id/btn_as_host"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="As Host"
+                ></Button>
+        <EditText
+                android:id="@+id/et_ip"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="192.168.2.11"
+                ></EditText>
+        <Button
+                android:id="@+id/btn_connect"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Connect"
+                ></Button>
+
+        <Button
+                android:id="@+id/btn_start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Start"
+                ></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

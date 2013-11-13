@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+    <LinearLayout
+            android:layout_width="100dip"
+            android:layout_height="match_parent"
+            android:background="#44000000"
+            android:orientation="vertical"
+            android:id="@+id/layout_state_bar"
+            >
+
+        <Button
+                android:id="@+id/btn_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:text="Level :0"
+                ></Button>
+        <TextView
+                android:id="@+id/tv_win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/0"
+                ></TextView>
+
+    </LinearLayout>
+
+    <GridView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/layout_state_bar"
+            android:id="@+id/gridview"
+            android:verticalSpacing="2dip"
+            android:horizontalSpacing="2dip"
+            android:listSelector="@null"
+            android:numColumns="7"
+            ></GridView>
+    <Button
+            android:id="@+id/btn_prepare"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:text="Start"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            ></Button>
+</RelativeLayout>
+

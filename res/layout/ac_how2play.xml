@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:text="最长递增子序列(LIS)"
+            android:textSize="22sp"
+            android:padding="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+    <TextView
+            android:text="问题描述:求一个序列中最长递增子序列,不要求连续."
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+    <TextView
+            android:text="例1: 序列A={1,2,5,3,6},提示:最长递增子序列长度为:4"
+            android:padding="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+    <TextView
+            android:text="解:{1,2,3,6}"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+
+    <TextView
+            android:text="例2: 序列B={5,8,4,9,3,6,7},提示:最长递增子序列长度为:3"
+            android:padding="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+    <TextView
+            android:text="解:{5,8,9} 或 {3,6,7} 或 {4,6,7}"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+</LinearLayout>
